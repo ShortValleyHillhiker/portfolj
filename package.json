@@ -1,7 +1,7 @@
 {
   "name": "portfolio-redux",
   "version": "0.1.0",
-  "homepage": "vennerstrom.se",
+  "homepage": "https://shortvalleyhillhiker.github.io/portfolj",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
