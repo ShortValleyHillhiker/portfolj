@@ -22,11 +22,13 @@ function showModalWindow(buttonEl) {
 
   document.querySelector(".modal-fader").className += " active";
   document.querySelector(modalTarget).className += " active";
+  document.body.style.overflow = "hidden";
 }
 
 function hideAllModalWindows() {
   var modalFader = document.querySelector(".modal-fader");
   var modalWindows = document.querySelectorAll(".modal-window");
+  document.body.style.removeProperty("overflow");
 
   if (modalFader.className.indexOf("active") !== -1) {
     modalFader.className = modalFader.className.replace("active", "");
