@@ -22,7 +22,6 @@
 
   font-family: var(--ff-body);
   font-weight: 400;
-  font-size: clamp(0.98rem, 1vw, 1rem);
 }
 html {
   height: -webkit-fill-available;
@@ -37,23 +36,24 @@ hr {
   border-top: var(--brdr-main);
 }
 h1 {
-  font-size: clamp(1.5rem, 8vw, 2.25rem);
+  font-size: 2.25rem;
   line-height: 0.98;
   font-weight: 900;
 }
 h2 {
-  font-size: clamp(1.4rem, 4vw, 1.5rem);
+  font-size: 1.4rem;
   font-weight: 600;
 }
 p {
   line-height: 1.4;
+  font-size: 1rem;
 }
 p,
 button {
   font-size: clamp(0.98rem, 1vw, 1rem) !important;
 }
 small {
-  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+  font-size: 0.7rem;
 }
 h1,
 h2,
