@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Nice to see you here! This page is nothing special as I built it myself using CSS and vanilla JS. -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio - Victor Vennerström</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./swiperjs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/afak/libs/font-awesome/6.2.0/css.all.min.css" >
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <main>
+      <div id="modal-0" class="modal-window">
+        <span class="placeholder case-grid">
+          <span>
+            <small>About me</small>
+            <h2>Victor Vennerström</h2>
+          </span>
+         
+          <button class="modal-btn modal-hide test noSelect">Close</button></span>
+        </span>
+      </div>
+
+      <div id="modal-1" class="modal-window">
+        <span class="placeholder case-grid ">
+          <div class="case-title">
+            <small>Case 1</small>
+            <h2>Title for modal</h2>
+          </div>
+          <div class="case-one">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis aliquam, veniam sint magnam laborum delectus consequatur aspernatur nam eius rerum in molestias nemo fuga eveniet, nesciunt eum maiores reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis aliquam, veniam sint magnam laborum delectus consequatur aspernatur nam eius rerum in molestias nemo fuga eveniet, nesciunt eum maiores reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis aliquam, veniam sint magnam laborum delectus consequatur aspernatur nam eius rerum in molestias nemo fuga eveniet, nesciunt eum maiores reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis aliquam, veniam sint magnam laborum delectus consequatur aspernatur nam eius rerum in molestias nemo fuga eveniet, nesciunt eum maiores reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis aliquam, veniam sint magnam laborum delectus consequatur aspernatur nam eius rerum in molestias nemo fuga eveniet, nesciunt eum maiores reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
+          </div>
+          <div class="case-two"></div>
+          <div class="case-three"></div>
+          <div class="case-four">
+            <small>AD - Victor Vennerström</small> <br />
+            <small>AD - Victor Vennerström</small> <br />
+            <small>AD - Victor Vennerström</small> <br />
+            <small>AD - Victor Vennerström</small></div>
+          
+          <button class="modal-btn modal-hide test noSelect">Close</button></span>
+        </span>
+      </div>
+
+      <div class="parent">
+        <!-- About Me -->
+        <div class="placeholder section-about">
+          <span>
+          <h1>Victor Vennerström</h1>
+          <small
+            ><span style="font-weight: 600">Art director</span> - Gothenburg,
+            Sweden</small> 
+          </span>
+            <img src="https://source.unsplash.com/featured/275x275" alt="">
+          <button class="test open-modal noSelect" data-target="modal-0">
+            👋
+          </button>
+        </div>
+        <!-- SoMe -->
+        <div class="section-contact">
+          <div class="placeholder disp-inline">
+            <span>
+              <a class="noSelect" href="https://www.linkedin.com/in/victor-vennerstrom"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a class="noSelect" href="https://www.instagram.com/victorvennerstrom/"><i class="fa-brands fa-instagram"></i></a>
+              <a class="noSelect open-modal" data-target="modal-1"><i class="fa-solid fa-envelope"></i></a>
+            </span>
+            <span>
+              <p>Let's get in touch!</p>
+            </span>
+          </div>
+        </div>
+        <!-- Case Swiper -->
+        <div class="placeholder section-case">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-color: #75c4ab">
+                <span>
+                  <h2>Title 1</h2>
+                  <button class="open-modal noSelect" data-target="modal-1">
+                    Take a closer look
+                  </button>
+                </span>
+              </div>
+              <div class="swiper-slide" style="background-color: #568f7d">
+                <span>
+                  <h2>Title 2</h2>
+                  <button class="open-modal noSelect" data-target="modal-1">
+                    Take a closer look
+                  </button>
+                </span>
+              </div>
+              <div class="swiper-slide" style="background-color: #c8ded7">
+                <span>
+                  <h2>Title 3</h2>
+                  <button class="open-modal noSelect" data-target="modal-1">
+                    Take a closer look
+                  </button>
+                </span>
+              </div>
+              <div class="swiper-slide" style="background-color: #568f7c">
+                <span>
+                  <h2>Title 4</h2>
+                  <button class="open-modal noSelect" data-target="modal-1">
+                    Take a closer look
+                  </button>
+                </span>
+              </div>
+            </div>
+            <div class="buttonplacer">
+              <div class="swiper-button-prev noSelect">&#x2190;</div>
+              <div class="swiper-button-next noSelect">&#x2192;</div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal-fader">test</div>
+
+    <!-- Swiper JS & Initialize -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+ <script src="./scripts/modalComp.js"></script>
+ <script src="https://kit.fontawesome.com/574911d5c7.js" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
