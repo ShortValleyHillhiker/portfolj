@@ -45,12 +45,11 @@ h2 {
   font-weight: 600;
 }
 p {
-  line-height: 1.4;
   font-size: 1rem;
 }
 p,
 button {
-  font-size: clamp(0.98rem, 1vw, 1rem) !important;
+  line-height: 1.4;
 }
 small {
   font-size: 0.7rem;
@@ -363,6 +362,26 @@ button.test {
       -webkit-box-align: baseline;
       -ms-flex-align: baseline;
       align-items: baseline;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      line-height: 0.98;
+      font-weight: 900;
+    }
+    h2 {
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 0.65rem;
+    }
+    p,
+    button {
+      line-height: 1.4;
+    }
+    small {
+      font-size: 0.2rem;
     }
   }
   .placeholder {
