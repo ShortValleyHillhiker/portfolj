@@ -122,12 +122,6 @@ section *:nth-child(10) {
   width: 100vw;
   padding: 2rem;
 }
-.scroll-to {
-  scroll-snap-align: end;
-  display: block;
-  height: 8vh;
-  min-height: 40px;
-}
 
 .hidden {
   opacity: 0;
@@ -245,5 +239,11 @@ section *:nth-child(10) {
   #profpic.show {
     opacity: 0.85;
     transform: translate(clamp(4.5rem, 20vw, 16.5rem), 3rem);
+  }
+  .scroll-to {
+    scroll-snap-align: end;
+    display: block;
+    height: 8vh;
+    min-height: 40px;
   }
 }
