@@ -83,7 +83,7 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
-  height: 110vh;
+  height: 140vh;
   min-height: 650px;
 }
 section *:nth-child(2) {
@@ -122,6 +122,12 @@ section *:nth-child(10) {
   width: 100vw;
   padding: 2rem;
 }
+.scroll-to {
+  scroll-snap-align: end;
+  display: block;
+  height: 8vh;
+  min-height: 40px;
+}
 
 .hidden {
   opacity: 0;
@@ -152,11 +158,12 @@ section *:nth-child(10) {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -2;
+  position: relative;
   transform: translate(300px, 3rem);
 }
 #profpic.show {
   opacity: 0.85;
-  transform: translate(clamp(12.5rem, 32vw, 15rem), 3rem);
+  transform: translate(clamp(6.5rem, 35vw, 16.5rem), 3rem);
 }
 
 .workingonit {
@@ -234,5 +241,9 @@ section *:nth-child(10) {
   .case-button:nth-child(3).show,
   .case-button:nth-child(3) *.show {
     transform: translateX(0);
+  }
+  #profpic.show {
+    opacity: 0.85;
+    transform: translate(clamp(4.5rem, 20vw, 16.5rem), 3rem);
   }
 }
