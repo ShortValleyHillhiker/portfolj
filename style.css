@@ -22,10 +22,12 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
+h1,
+h2 {
+  font-family: "Modak", cursive;
+}
 h1 {
   font-size: 4rem;
-  font-family: "Modak", cursive;
   font-weight: 400;
 }
 h2 {
@@ -36,7 +38,6 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Modak", cursive;
   font-weight: 400;
   margin: 0;
   line-height: 90%;
