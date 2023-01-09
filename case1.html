@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfölj - Victor Vennerström</title>
+    <title>Portfölj - Exempel Case</title>
 
     <script
       src="https://kit.fontawesome.com/574911d5c7.js"
@@ -22,8 +22,12 @@
       <div class="spacer"></div>
       <section id="home">
         <span class="container">
-          <h2>Rubrik</h2>
+          <span class="case-header">
+            <h2>Rubrik</h2>
+            <a class="hidden" href="index.html">&larr; Till startsida</a>
+          </span>
           <hr />
+          <br />
           <h3>Insikt</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
@@ -36,19 +40,19 @@
       <div class="spacer"></div>
       <section>
         <span class="container">
-          <p>
+          <p class="hidden">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
             exercitationem delectus aspernatur, adipisci, fugiat repellat animi
             aut excepturi nobis optio provident tenetur? Nam explicabo, cum
             totam itaque vitae eveniet tempora!
           </p>
-          <p>
+          <p class="hidden">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
             exercitationem delectus aspernatur, adipisci, fugiat repellat animi
             aut excepturi nobis optio provident tenetur? Nam explicabo, cum
             totam itaque vitae eveniet tempora!
           </p>
-          <p>
+          <p class="hidden">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
             exercitationem delectus aspernatur, adipisci, fugiat repellat animi
             aut excepturi nobis optio provident tenetur? Nam explicabo, cum
@@ -58,14 +62,19 @@
       </section>
       <div class="spacer"></div>
       <section>
-        <span class="container">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            exercitationem delectus aspernatur, adipisci, fugiat repellat animi
-            aut excepturi nobis optio provident tenetur? Nam explicabo, cum
-            totam itaque vitae eveniet tempora!
-          </p></span
-        >
+        <span class="case-end">
+          <p class="hidden">Tack!</p>
+          <span class="hidden end-credit">
+            <div>
+              <b>AD</b>
+              <b>CW</b>
+            </div>
+            <div>
+              <i>John Doe</i>
+              <i>Jane Doe</i>
+            </div>
+          </span>
+        </span>
       </section>
       <section id="footer">
         <span class="container">
@@ -73,7 +82,7 @@
             <p>victor@vennerstrom.se</p>
             <small>&#169; 2023</small></span
           >
-          <a onclick="scrollHome()" class="hidden button">Till toppen</a>
+          <a onclick="scrollHome()" class="hidden button">Till toppen &uarr;</a>
         </span>
       </section>
     </main>
