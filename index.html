@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfölj - Victor Vennerström</title>
 
     <script
       src="https://kit.fontawesome.com/574911d5c7.js"
@@ -12,13 +12,15 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
     <script defer src="app.js"></script>
+    <script defer src="scroll.js"></script>
 
     <!--Hej & kul att du kikar in på koden, hemsidan är gjord av mig och många hjälpsamma människor på Codepen samt Youtube.-->
   </head>
   <body>
     <main>
-      <section>
-        <span class="container" id="top">
+      <div class="spacer"></div>
+      <section id="home">
+        <span class="container">
           <h1>
             Victor <br />
             Vennerström
@@ -31,8 +33,8 @@
             minus perspiciatis ullam minima necessitatibus incidunt nam non sunt
             commodi voluptatum autem.
           </p>
-          <a href="#one" class="hidden button">Om mig</a>
-          <a href="#two" class="hidden button">Case</a>
+          <a onclick="scrollOne()" class="hidden button">Om mig</a>
+          <a onclick="scrollTwo()" class="hidden button">Case</a>
           <a
             href="https://www.linkedin.com/in/victor-vennerstrom"
             class="hidden button inverted"
@@ -45,6 +47,7 @@
           ></a>
         </span>
       </section>
+      <div class="spacer"></div>
       <section id="one">
         <span class="container">
           <div id="profpic" class="hidden"></div>
@@ -60,53 +63,55 @@
             tekniska universitet.
           </p>
           <p class="hidden">
-            Väl ”online-mött”
-            <i style="-webkit-transform: scaleX(-1); transform: scaleX(-1)" class="fa-solid fa-hand-peace"></i>
+            Väl <b><i>online</i></b>-mött
+            <i style="-webkit-transform: scaleX(-1); transform: scaleX(-1); color:var(--hl-color);" class="fa-solid fa-hand-peace"></i>
           </p>
           <a href="https://www.linkedin.com/in/victor-vennerstrom" class="hidden button inverted"> LinkedIn </a>
           <a href="https://www.instagram.com/victorvennerstrom/" class="hidden button inverted"> Instagram </a>
         </span>
-        <span class="scroll-to"></span>
       </section>
+      <div class="spacer"></div>
       <section id="two">
         <span class="container">
-          <h2>Case</h2>
-          <hr style="width: 5rem" />
-          <p class="hidden">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
           <div class="workingonit">
             <div class="hidden case-button">
               <span class="hidden">
-                <h3>Rubrik 1</h3>
-                <small>Lorem ipsum dolor sit amet</small>
+                <h3>Lita på Dina sinnen</h3>
+                <small>Naturskyddsföreningen</small>
               </span>
               <a class="hidden" href="#">Se mer</a>
             </div>
             <div class="hidden case-button">
               <span class="hidden">
-                <h3>Rubrik 2</h3>
-                <small>Lorem ipsum dolor sit amet</small>
+                <h3>Decarbonize, Re-nuclearize</h3>
+                <small>Fiktivt case</small>
               </span>
               <a class="hidden" href="#">Se mer</a>
             </div>
             <div class="hidden case-button">
               <span class="hidden">
-                <h3>Rubrik 3</h3>
-                <small>Lorem ipsum dolor sit amet</small>
+                <h3>Bredare än Bredband</h3>
+                <small>Fiktivt case</small>
               </span class="case-button">
               <a class="hidden" href="#">Se mer</a>
             </div>
             <div class="hidden case-button">
               <span class="hidden">
-                <h3>Rubrik 4</h3>
-                <small>Lorem ipsum dolor sit amet</small>
+                <h3>Bostadstillskottet</h3>
+                <small>Jagvillhabostad.nu</small>
               </span>
               <a class="hidden" href="#">Se mer</a>
             </div>
           </div>
         </span>
-        <span class="scroll-to"></span>
+      </section>
+      <section id="footer">
+        <span class="container">
+          <span>
+            <p>victor@vennerstrom.se</p>
+           <small>&#169; 2023</small></span>
+       <a onclick="scrollHome()" class="hidden button">Till toppen</a>
+      </span>
       </section>
     </main>
   </body>

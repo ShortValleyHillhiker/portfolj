@@ -7,7 +7,7 @@
 
 :root {
   --bg-color: #131316;
-  --hl-color: #bce56c;
+  --hl-color: #d5a525;
   --ft-color: #e8eaed;
 }
 * {
@@ -28,9 +28,11 @@ h2 {
 }
 h1 {
   font-size: 4rem;
+  color: #fff;
   font-weight: 400;
 }
 h2 {
+  font-weight: 400;
   font-size: 3.25rem;
 }
 h1,
@@ -38,7 +40,6 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 400;
   margin: 0;
   line-height: 90%;
 }
@@ -50,13 +51,14 @@ body {
   margin: 0;
 }
 hr {
-  border: 1px solid var(--ft-color);
+  border: 1px solid var(--hl-color);
   width: 1rem;
   margin: 0.2rem 0;
 }
 
 .button,
 .case-button a {
+  cursor: pointer;
   border: 1px solid var(--ft-color);
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -72,19 +74,19 @@ hr {
 }
 
 main {
+  scroll-snap-type: y mandatory;
   height: 100vh;
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  scroll-snap-type: y mandatory;
 }
-
+#one {
+  margin-top: -3rem;
+}
 section {
   display: grid;
   place-items: center;
   align-content: center;
-  height: 140vh;
-  min-height: 650px;
 }
 section *:nth-child(2) {
   transition-delay: 0.08s;
@@ -113,7 +115,17 @@ section *:nth-child(9) {
 section *:nth-child(10) {
   transition-delay: 0.7s;
 }
-
+.spacer {
+  height: 50vh;
+}
+#footer {
+  height: 16.5rem;
+}
+#footer .container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
 .container {
   scroll-snap-align: center;
   position: relative;
@@ -161,7 +173,7 @@ section *:nth-child(10) {
 }
 
 .workingonit {
-  height: 70vh;
+  height: 90vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -175,6 +187,9 @@ section *:nth-child(10) {
   justify-content: space-between;
   flex-direction: row;
   align-items: flex-end;
+}
+.case-button a {
+  min-width: 81px;
 }
 .case-button:nth-child(4) {
   background-color: #0f500fd4;
@@ -239,11 +254,5 @@ section *:nth-child(10) {
   #profpic.show {
     opacity: 0.85;
     transform: translate(clamp(4.5rem, 20vw, 16.5rem), 3rem);
-  }
-  .scroll-to {
-    scroll-snap-align: end;
-    display: block;
-    height: 8vh;
-    min-height: 40px;
   }
 }
